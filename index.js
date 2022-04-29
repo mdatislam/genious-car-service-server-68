@@ -32,6 +32,9 @@ app.get('/',(req,res)=>{
    res.send('from Genious car')
 });
 
+app.get('/hero',(req,res)=>{
+    res.send('here meet with hero')
+})
 
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.1y8ap.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
